@@ -18,12 +18,6 @@ Soluzioni
   FROM `students`
   WHERE (2023 - YEAR(`date_of_birth`)) = 30;
 
-  Oppure
-
-  SELECT *
-  FROM `students`
-  WHERE DATEDIFF(NOW(), `date_of_birth`)/365.25 > 30;
-
 4. SELECT *
   FROM `courses`
   WHERE `period` = 'I semestre'
